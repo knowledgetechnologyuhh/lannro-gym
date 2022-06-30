@@ -1,7 +1,13 @@
 # LANRO (Language Robotics)
+> NOTE: Check out the maintainted version of this source code [here](https://github.com/frankroeder/lanro-gym).
+
 <div>
 <img src="./docs/panda_nlpush.gif" width="100%" height="auto">
 </div>
+
+__LANRO__ is a platform to study language-conditioned reinforcement learning with
+a synthetic caretaker providing instructions in hindsight.
+It had been published as part of our paper [**_Grounding Hindsight Instructions in Multi-Goal Reinforcement Learning for Robotics_**](https://arxiv.org/abs/2204.04308).
 
 ## Installation
 ### Pip module
@@ -28,7 +34,7 @@ pip install git+ssh://git@github.com/frankroeder/lanro-gym.git
 
 ```python
 import gym
-import lanro
+import lanro_gym
 
 env = gym.make('PandaStack2-v0', render=True)
 
@@ -42,7 +48,7 @@ env.close()
 
 ## Environments
 
-[Click here for the environments README](./lanro/environments/README.md)
+[Click here for the environments README](./lanro_gym/environments/README.md)
 
 ## Keyboard and mouse control
 It is also possible to manipulate the robot with sliders
